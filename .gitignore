@@ -1,0 +1,6 @@
+/lib/*.pdb
+/lib/*.exp
+/lib/*.ilk
+/build/platforms/vs2015/Temp
+/build/platforms/vs2015/x64
+/build/tools/ShaderBuildTool/x64
