@@ -350,7 +350,7 @@ copy /Y ..\..\..\..\lib\GFSDK_SSAO_D3D11.win64.pdb ..\Bin</Command>
     </ClCompile>
     <Link>
       <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>GFSDK_SSAO_D3D11_MT.lib;dxguid.lib;d3d11.lib;winmm.lib;comctl32.lib;dxgi.lib;d3dcompiler.lib;nvapi64.lib</AdditionalDependencies>
+      <AdditionalDependencies>GFSDK_SSAO_D3D11.win64.lib;dxguid.lib;d3d11.lib;winmm.lib;comctl32.lib;dxgi.lib;d3dcompiler.lib;nvapi64.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
