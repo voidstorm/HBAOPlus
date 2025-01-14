@@ -119,7 +119,8 @@ public:
              D3D11_USAGE_DEFAULT, //Usage
              D3D11_BIND_CONSTANT_BUFFER, //BindFlags
              0, //CPUAccessFlags
-             0  //MiscFlags
+             0,  //MiscFlags
+             0
         };
 
         // The D3D11 runtime requires constant buffer sizes to be multiple of 16 bytes
@@ -178,7 +179,7 @@ public:
     }
     void Create(ID3D11Device* pD3DDevice)
     {
-        D3D11_SUBRESOURCE_DATA SubresourceData = { &m_Data };
+        D3D11_SUBRESOURCE_DATA SubresourceData = { &m_Data , 0, 0};
         D3D11::BaseConstantBuffer::Create(pD3DDevice, &SubresourceData);
     }
 };
